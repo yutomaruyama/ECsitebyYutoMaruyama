@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <session-config>
+  	<session-timeout>1</session-timeout>
+  </session-config>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>jp.co.aforce.controll.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.LogoutAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>ProductAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.ProductAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductAction</servlet-name>
+    <url-pattern>/ProductAction</url-pattern>
+  </servlet-mapping>
+
+      <servlet>
+    <servlet-name>CartAddAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.CartAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartAddAction</servlet-name>
+    <url-pattern>/CartAddAction</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>PreviewAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.PreviewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreviewAction</servlet-name>
+    <url-pattern>/PreviewAction</url-pattern>
+  </servlet-mapping>
+
+     <servlet>
+    <servlet-name>PurchaseAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.PurchaseAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PurchaseAction</servlet-name>
+    <url-pattern>/PurchaseAction</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>JoinAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.JoinAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JoinAction</servlet-name>
+    <url-pattern>/JoinAction</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>MemberAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.MemberAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberAction</servlet-name>
+    <url-pattern>/MemberAction</url-pattern>
+  </servlet-mapping>
+
+     <servlet>
+    <servlet-name>InsertAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.InsertAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertAction</servlet-name>
+    <url-pattern>/InsertAction</url-pattern>
+  </servlet-mapping>
+
+       <servlet>
+    <servlet-name>SelectAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.SelectAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAction</servlet-name>
+    <url-pattern>/SelectAction</url-pattern>
+  </servlet-mapping>
+
+         <servlet>
+    <servlet-name>UpdateAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.UpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAction</servlet-name>
+    <url-pattern>/UpdateAction</url-pattern>
+  </servlet-mapping>
+
+         <servlet>
+    <servlet-name>DeleteAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.DeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAction</servlet-name>
+    <url-pattern>/DeleteAction</url-pattern>
+  </servlet-mapping>
+
+         <servlet>
+    <servlet-name>DeleteSearchAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.DeleteSearchAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteSearchAction</servlet-name>
+    <url-pattern>/DeleteSearchAction</url-pattern>
+  </servlet-mapping>
+
+           <servlet>
+    <servlet-name>CheckAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.CheckAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckAction</servlet-name>
+    <url-pattern>/CheckAction</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>PreInsertAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.PreInsertAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreInsertAction</servlet-name>
+    <url-pattern>/PreInsertAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PreUpdateAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.PreUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PreUpdateAction</servlet-name>
+    <url-pattern>/PreUpdateAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.UploadAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadAction</servlet-name>
+    <url-pattern>/UploadAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PrePurchaseAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.PrePurchaseAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrePurchaseAction</servlet-name>
+    <url-pattern>/PrePurchaseAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>InfoAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.InfoAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InfoAction</servlet-name>
+    <url-pattern>/InfoAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CartRemoveAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.CartRemoveAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartRemoveAction</servlet-name>
+    <url-pattern>/CartRemoveAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CartCountChangeAction</servlet-name>
+    <servlet-class>jp.co.aforce.controll.CartCountChangeAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartCountChangeAction</servlet-name>
+    <url-pattern>/CartCountChangeAction</url-pattern>
+  </servlet-mapping>
+
+</web-app>

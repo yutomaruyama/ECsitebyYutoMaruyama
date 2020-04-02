@@ -1,0 +1,37 @@
+ 	<footer class = "footer">
+ 	<p>(c)Yuto Maruyama</p>
+ 	</footer>
+ 	<script src = main.js></script>
+ 	<script src = "https://code.jquery.com/jquery-3.4.1.min.js"><</script>
+ 	<script>
+ 		$(function() {
+ 			$('.message a').click(function() {
+ 				$('form').animate({height: "toggle", opacity:
+ 					"toggle"}, "slow");
+ 			});
+ 			$('#login').attr('disabled', 'disabled');
+
+ 			$('#norobot').click(function(){
+ 				if ($(this).prop('checked') == false) {
+ 					$('#login').attr('disabled', 'disabled');
+ 				} else {
+ 					$('#login').removeAttr('disabled');
+ 				}
+ 			});
+ 			$('#create').attr('disabled', 'disabled');
+ 			$('#norobots').click(function(){
+ 				if ($(this).prop('checked') == false) {
+ 					$('#create').attr('disabled', 'disabled');
+ 				} else {
+ 					$('#create').removeAttr('disabled');
+ 				}
+ 			});
+ 			$('#introduction1').hide();
+ 			$('#introduction2').hide();
+ 			$('#introduction1').fadeIn('slow');
+ 			$('#introduction2').fadeIn('slow');
+ 		});
+ 	</script>
+
+</body>
+</html>
